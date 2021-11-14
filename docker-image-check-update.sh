@@ -76,7 +76,7 @@ echo "$local_digest"
 if [ "$digest" != "$local_digest" ] ; then
 	echo "$1 :Update available. Executing update command..."
 #	($COMMAND)
-        echo "Mise à jour disponible pour le container $1" | /usr/bin/mail -s "Mise à jour de $1" serge@avrillon.net
+        echo "Mise à jour disponible pour le container $1" | /usr/bin/mail -s "Mise à jour de $1" serge@xxx.net
 else
 	echo "$1: Already up to date. Nothing to do."
 fi
