@@ -1,5 +1,5 @@
 # docker-image-check-update
-Script to check docker image update
+Script to check if docker image update is available.
 
 ## Examples:
     $ ./docker-image-check-update.sh nginx:stable-alpine
