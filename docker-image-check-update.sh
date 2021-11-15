@@ -8,9 +8,7 @@ if [ $# -eq 0 ]
     exit 1
 fi
 
-
 IMAGE="$1"
-COMMAND=$(echo "Mise à jour disponible pour le container $1" | /usr/bin/mail -s "Mise à jour de $1" serge@avrillon.net)
 
 apidomain="registry-1.docker.io"
 
@@ -74,7 +72,7 @@ echo "$local_digest"
 
 if [ "$digest" != "$local_digest" ] ; then
 	echo "$1: Update available. Executing update command..."
-	echo "${COMMAND}"
+	echo "Mise à jour disponible pour le container $1" | /usr/bin/mail -s "Mise à jour de $1" xxx@mail.com
 else
 	echo "$1: Already up to date. Nothing to do."
 fi
